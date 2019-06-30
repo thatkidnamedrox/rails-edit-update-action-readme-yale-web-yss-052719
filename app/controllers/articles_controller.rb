@@ -30,5 +30,6 @@ class ArticlesController < ApplicationController
       title: params[:title],
       description: params[:description]
     )
+    redirect_to article_path(@article)
   end
 end
